@@ -1,0 +1,22 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# Test and tool caches
+.pytest_cache/
+.ruff_cache/
+
+# Build output
+build/
+dist/
+*.spec
+
+# Editor and operating system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
