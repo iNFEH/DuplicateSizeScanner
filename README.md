@@ -2,7 +2,7 @@
 
 Duplicate Size Scanner is a PySide6 desktop application that finds files with
 identical file sizes. You can compare two folders or find repeated file sizes
-within one folder.
+within one folder. This application is made using AI assistance.
 
 ## Disclaimer
 
