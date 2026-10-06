@@ -90,9 +90,9 @@ Instructions for agents to build and maintain the Duplicate Size Scanner applica
 
 - Prefer tools from the local `.venv` when it exists.
 - After Python code or test changes, run:
-    - `.venv/bin/ruff check --fix`
-    - `.venv/bin/ruff format`
-    - `.venv/bin/pytest`
+    - `ruff check --fix`
+    - `ruff format`
+    - `pytest`
 - These checks are not required for documentation-only changes unless the
   documentation changes a command or configuration example.
 - Treat `pyproject.toml` as the source of truth for tool configuration.
