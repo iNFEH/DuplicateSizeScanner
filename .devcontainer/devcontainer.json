@@ -1,0 +1,13 @@
+{
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "remoteUser": "vscode",
+  "mounts": [
+    "source=${localEnv:SSH_AUTH_SOCK},target=/tmp/ssh-agent.sock,type=bind"
+  ],
+  "containerEnv": {
+    "SSH_AUTH_SOCK": "/tmp/ssh-agent.sock"
+  }
+}

@@ -109,12 +109,21 @@ ruff format
 pytest
 ```
 
+### Development container
+
+A development container is also provided if preferred over a local setup. It runs Python 3.14 on Debian 12. The image installs `requirements-dev.txt` in `/opt/venv` and enables Qt's offscreen platform for tests. Run `ruff check --fix`, `ruff format`, and `pytest` from the repository root. You do not need to activate a virtual environment. The development container requires a running SSH agent on the
+host because it mounts `${localEnv:SSH_AUTH_SOCK}`.
+
 The test suite is not complete, it covers basic scanning, filtering, settings persistence, file actions and user-interface behavior.
 
 ## Build an executable
 
 PyInstaller builds are platform-specific. Build the Windows executable on
 Windows and the Linux executable on Linux. See [the build instructions](docs/building.md) for the commands.
+
+You can build the Linux executable inside the container with the command in
+[the build instructions](docs/building.md). The container does not forward a
+display so use a Linux desktop to run the executable.
 
 ## License
 
